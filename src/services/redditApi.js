@@ -1,4 +1,4 @@
-const BASE_URL = "http://localhost:5000";
+const BASE_URL = "https://subreddit-vibe-check-server.onrender.com";
 
 export async function getHotPosts(subreddit) {
     const response = await fetch(
