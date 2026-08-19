@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 
 const sentimentStyles = {
     positive: { bg: "bg-[#ED775A]/10", text: "text-[#B24D2C]", dot: "#ED775A" },
@@ -37,14 +36,14 @@ function PostList({ posts }) {
                                 <span>↑ {post.score}</span>
                                 <span>💬 {post.comments}</span>
                                 {post.url && (
-                                    <Link
+                                    <a
                                         href={post.url}
                                         target="_blank"
                                         rel="noopener noreferrer"
                                         className="ml-auto font-body font-medium text-[#E4004B] hover:underline"
                                     >
                                         View post →
-                                    </Link>
+                                    </a>
                                 )}
                             </div>
                         </div>
